@@ -33,7 +33,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="borrower in borrowers | filter: searchBorrower">
+        <tr ng-repeat="borrower in borrowers | filter: searchBorrower" ng-class="{'odd': $odd, 'even': $even}">
 
             <td><g:link action="show" id="{{borrower.id}}">{{borrower.address}}</g:link></td>
 
